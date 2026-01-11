@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | DevWatch International</title>
+
+  <meta name="description" content="Policy briefs, working papers, and reports produced by DevWatch International to inform governance, development, and strategic decision-making.">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            neutral: '#111827',
+            muted: '#6B7280'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-neutral font-sans">
+
+<!-- ================= HEADER ================= -->
+<header class="border-b">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/images/devwatch-logo.svg" alt="DevWatch International" class="h-8">
+      <span class="font-serif font-bold text-primary text-xl">DevWatch</span>
+    </a>
+
+    <nav class="space-x-6 text-sm font-medium">
+      <a href="about.html" class="hover:text-primary">About</a>
+      <a href="focus.html" class="hover:text-primary">Focus Areas</a>
+      <a href="articles.html" class="hover:text-primary">Articles</a>
+      <a href="publications.html" class="text-primary">Publications</a>
+      <a href="media.html" class="hover:text-primary">Media</a>
+      <a href="people.html" class="hover:text-primary">People</a>
+      <a href="contact.html" class="hover:text-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PAGE INTRO ================= -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="max-w-3xl">
+    <h1 class="font-serif text-4xl mb-4">Publications</h1>
+    <p class="text-lg text-muted">
+      Policy briefs, working papers, and reports produced by DevWatch International to provide deeper analytical grounding for policy debate and decision-making.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FILTER BAR (VISUAL SIGNAL) ================= -->
+<section class="max-w-7xl mx-auto px-6 mb-12">
+  <div class="flex flex-wrap gap-4 text-sm">
+    <select class="border px-3 py-2 rounded">
+      <option>All Focus Areas</option>
+      <option>Governance & Leadership</option>
+      <option>Development Finance & Economy</option>
+      <option>Renewable Energy & Sustainability</option>
+      <option>Digital Policy & Innovation</option>
+      <option>Peace, Security & Cooperation</option>
+    </select>
+
+    <select class="border px-3 py-2 rounded">
+      <option>All Publication Types</option>
+      <option>Policy Brief</option>
+      <option>Working Paper</option>
+      <option>Report</option>
+    </select>
+
+    <select class="border px-3 py-2 rounded">
+      <option>All Years</option>
+      <option>2025</option>
+      <option>2024</option>
+    </select>
+  </div>
+</section>
+
+<!-- ================= FEATURED PUBLICATION ================= -->
+<section class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="max-w-3xl">
+      <span class="text-xs uppercase tracking-wide text-muted">
+        Policy Brief · Governance & Leadership
+      </span>
+      <h2 class="font-serif text-3xl mt-3 mb-4">
+        Strengthening Local Government Accountability in Nigeria
+      </h2>
+      <p class="text-muted mb-4">
+        This policy brief examines institutional constraints affecting local governance and outlines pragmatic reform options grounded in Nigeria’s federal structure.
+      </p>
+      <p class="text-sm text-muted mb-6">
+        DevWatch Editorial · March 2025
+      </p>
+      <a href="#" class="text-primary font-medium">
+        Download PDF →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS LIST ================= -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <div class="max-w-4xl space-y-14">
+
+    <!-- PUBLICATION ITEM -->
+    <article>
+      <span class="text-xs uppercase tracking-wide text-muted">
+        Working Paper · Development Finance & Economy
+      </span>
+      <h3 class="font-serif text-2xl mt-2 mb-3">
+        Cooperative Models and Inclusive Development Outcomes
+      </h3>
+      <p class="text-muted mb-3">
+        An exploratory analysis of cooperative systems as instruments for local economic development and social resilience.
+      </p>
+      <p class="text-sm text-muted mb-4">
+        By Gideon Odeyenuma · January 2025
+      </p>
+      <div class="space-x-4 text-sm">
+        <a href="#" class="text-primary font-medium">Download PDF →</a>
+        <a href="articles.html" class="text-primary font-medium">Related analysis →</a>
+      </div>
+    </article>
+
+    <article>
+      <span class="text-xs uppercase tracking-wide text-muted">
+        Report · Renewable Energy & Sustainability
+      </span>
+      <h3 class="font-serif text-2xl mt-2 mb-3">
+        Community Energy Systems and the Politics of Access
+      </h3>
+      <p class="text-muted mb-3">
+        This report explores the political, regulatory, and social dimensions of decentralised renewable energy deployment in underserved communities.
+      </p>
+      <p class="text-sm text-muted mb-4">
+        DevWatch Editorial · November 2024
+      </p>
+      <div class="space-x-4 text-sm">
+        <a href="#" class="text-primary font-medium">Download PDF →</a>
+        <a href="articles.html" class="text-primary font-medium">Related analysis →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t">
+  <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-muted">
+    © DevWatch International · Policy Analysis & Media Platform
+  </div>
+</footer>
+
+</body>
+</html>

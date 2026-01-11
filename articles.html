@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles & Commentary | DevWatch International</title>
+
+  <meta name="description" content="Analysis, explainers, and commentary on governance, development, and strategic issues shaping Africa and emerging economies.">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            neutral: '#111827',
+            muted: '#6B7280'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-neutral font-sans">
+
+<!-- ================= HEADER ================= -->
+<header class="border-b">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/images/devwatch-logo.svg" alt="DevWatch International" class="h-8">
+      <span class="font-serif font-bold text-primary text-xl">DevWatch</span>
+    </a>
+
+    <nav class="space-x-6 text-sm font-medium">
+      <a href="about.html" class="hover:text-primary">About</a>
+      <a href="focus.html" class="hover:text-primary">Focus Areas</a>
+      <a href="articles.html" class="text-primary">Articles</a>
+      <a href="publications.html" class="hover:text-primary">Publications</a>
+      <a href="media.html" class="hover:text-primary">Media</a>
+      <a href="people.html" class="hover:text-primary">People</a>
+      <a href="contact.html" class="hover:text-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PAGE INTRO ================= -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="max-w-3xl">
+    <h1 class="font-serif text-4xl mb-4">Articles & Commentary</h1>
+    <p class="text-muted text-lg">
+      Analysis, explainers, and commentary on governance, development, and strategic issues shaping Africa and emerging economies.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FILTER BAR (VISUAL ONLY) ================= -->
+<section class="max-w-7xl mx-auto px-6 mb-12">
+  <div class="flex flex-wrap gap-4 text-sm">
+    <select class="border px-3 py-2 rounded">
+      <option>All Focus Areas</option>
+      <option>Governance & Leadership</option>
+      <option>Development Finance & Economy</option>
+      <option>Renewable Energy & Sustainability</option>
+      <option>Digital Policy & Innovation</option>
+      <option>Peace, Security & Cooperation</option>
+    </select>
+
+    <select class="border px-3 py-2 rounded">
+      <option>All Article Types</option>
+      <option>Editorial</option>
+      <option>Analysis</option>
+      <option>Explainer</option>
+      <option>Commentary</option>
+    </select>
+  </div>
+</section>
+
+<!-- ================= ARTICLES LIST ================= -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+  <div class="max-w-4xl space-y-12">
+
+    <!-- ARTICLE ITEM -->
+    <article>
+      <span class="text-xs uppercase tracking-wide text-muted">
+        Analysis · Governance & Leadership
+      </span>
+      <h2 class="text-2xl font-serif mt-2 mb-3">
+        <a href="article-single.html" class="hover:text-primary">
+          Rebuilding Trust in Public Institutions
+        </a>
+      </h2>
+      <p class="text-muted mb-3">
+        A structured examination of why accountability reforms continue to stall — and what could realistically change that trajectory.
+      </p>
+      <p class="text-sm text-muted">
+        By DevWatch Editorial · October 2025 · 9 min read
+      </p>
+    </article>
+
+    <article>
+      <span class="text-xs uppercase tracking-wide text-muted">
+        Explainer · Digital Policy & Innovation
+      </span>
+      <h2 class="text-2xl font-serif mt-2 mb-3">
+        <a href="article-single.html" class="hover:text-primary">
+          How Digital Governance Is Reshaping Public Service Delivery
+        </a>
+      </h2>
+      <p class="text-muted mb-3">
+        Breaking down what digital reform really means for institutions, service delivery, and citizens.
+      </p>
+      <p class="text-sm text-muted">
+        By John Onuah · September 2025 · 7 min read
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t">
+  <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-muted">
+    © DevWatch International
+  </div>
+</footer>
+
+</body>
+</html>
