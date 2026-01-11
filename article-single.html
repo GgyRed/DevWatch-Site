@@ -70,34 +70,12 @@
 </section>
 
 <!-- ================= ARTICLE BODY ================= -->
-<article class="max-w-3xl mx-auto px-6 pb-20 prose prose-lg">
-
-  <p>
-    Public trust in institutions remains a defining challenge for governance systems across Africa. While reform agendas frequently emphasise transparency and accountability, outcomes often fall short of expectations.
-  </p>
-
-  <h2>Understanding the Trust Deficit</h2>
-
-  <p>
-    The persistence of institutional distrust is less a question of capacity and more one of incentives. Reform efforts often collide with entrenched political and bureaucratic interests.
-  </p>
-
-  <blockquote>
-    Policy failure in this context is rarely technical; it is fundamentally political.
-  </blockquote>
-
-  <h2>Why Reform Efforts Stall</h2>
-
-  <p>
-    Accountability mechanisms are frequently undermined by informal power structures that operate beyond formal rules. This creates a disconnect between reform design and implementation.
-  </p>
-
-  <h2>What Could Change</h2>
-
-  <p>
-    Sustainable reform requires aligning incentives, strengthening informal accountability, and building coalitions that benefit from institutional performance rather than dysfunction.
-  </p>
-
+<!-- ================= ARTICLE BODY ================= -->
+<article
+  id="article-body"
+  class="prose prose-lg max-w-3xl mx-auto px-6 pb-20"
+>
+  <!-- CMS content injected here -->
 </article>
 
 <!-- ================= AUTHOR BIO ================= -->
@@ -126,6 +104,23 @@
     © DevWatch International
   </div>
 </footer>
+<script>
+async function loadSingleArticle() {
+  const params = new URLSearchParams(window.location.search);
+  const file = params.get("file");
+  if (!file) return;
+
+  const res = await fetch(`/content/articles/${file}`);
+  const text = await res.text();
+
+  const body = text.replace(/---[\s\S]*?---/, "").trim();
+
+  document.getElementById("article-body").innerHTML =
+    body.split("\n\n").map(p => `<p>${p}</p>`).join("");
+}
+
+loadSingleArticle();
+</script>
 
 </body>
 </html>
