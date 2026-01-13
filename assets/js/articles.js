@@ -24,7 +24,8 @@ async function loadArticles() {
         Analysis
       </span>
       <h2 class="text-2xl font-serif mt-2 mb-3">
-        <a href="article-single.html?file=${encodeURIComponent(file)}"> class="hover:text-primary">
+        <a href="article-single.html?file=${encodeURIComponent(file)}" 
+        class="hover:text-primary">
           ${title}
         </a>
       </h2>
