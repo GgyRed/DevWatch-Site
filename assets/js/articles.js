@@ -2,7 +2,7 @@ async function loadArticles() {
   const container = document.getElementById("articles-list");
   if (!container) return;
 
-  const response = await fetch("/content/articles/");
+  const response = await fetch("content/articles/");
   const text = await response.text();
 
   // Extract markdown file links from directory listing
@@ -13,7 +13,7 @@ async function loadArticles() {
     .filter(href => href.endsWith(".md"));
 
   for (const file of links.reverse()) {
-    const articleRes = await fetch(`/content/articles/${file}`);
+    const articleRes = await fetch(`content/articles/${file}`);
     const articleText = await articleRes.text();
 
     const { title, summary, date } = parseFrontMatter(articleText);
@@ -24,7 +24,7 @@ async function loadArticles() {
         Analysis
       </span>
       <h2 class="text-2xl font-serif mt-2 mb-3">
-        <a href="article-single.html?file=${file}" class="hover:text-primary">
+        <a href="article-single.html?file=${encodeURIComponent(file)}"> class="hover:text-primary">
           ${title}
         </a>
       </h2>

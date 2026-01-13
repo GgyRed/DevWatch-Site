@@ -70,7 +70,6 @@
 </section>
 
 <!-- ================= ARTICLE BODY ================= -->
-<!-- ================= ARTICLE BODY ================= -->
 <article
   id="article-body"
   class="prose prose-lg max-w-3xl mx-auto px-6 pb-20"
@@ -110,7 +109,7 @@ async function loadSingleArticle() {
   const file = params.get("file");
   if (!file) return;
 
-  const res = await fetch(`/content/articles/${file}`);
+  const res = await fetch(`content/articles/${file}`);
   const text = await res.text();
 
   const body = text.replace(/---[\s\S]*?---/, "").trim();
