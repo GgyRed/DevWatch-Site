@@ -34,13 +34,17 @@
 
 <!-- ================= HEADER ================= -->
 <header class="border-b">
-  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <a href="index.html" class="flex items-center space-x-2">
-      <img src="assets/images/devwatch-logo.svg" alt="DevWatch International" class="h-8">
-      <span class="font-serif font-bold text-primary text-xl">DevWatch</span>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="index.html" class="flex items-center">
+      <img 
+        src="assets/images/devwatch-logo.png" 
+        alt="DevWatch International logo"
+        class="h-9 w-auto"
+      />
     </a>
 
-    <nav class="space-x-6 text-sm font-medium">
+    <nav class="hidden md:flex space-x-7 text-sm font-medium">
       <a href="about.html" class="hover:text-primary">About</a>
       <a href="focus.html" class="text-primary">Focus Areas</a>
       <a href="articles.html" class="hover:text-primary">Articles</a>
@@ -49,16 +53,40 @@
       <a href="people.html" class="hover:text-primary">People</a>
       <a href="contact.html" class="hover:text-primary">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<!-- ================= PAGE INTRO ================= -->
-<section class="max-w-7xl mx-auto px-6 py-16">
-  <div class="max-w-3xl">
-    <h1 class="font-serif text-4xl mb-4">Focus Areas</h1>
-    <p class="text-lg text-muted">
-      Thematic lenses through which DevWatch International examines governance, development, and strategic change in Africa and emerging economies.
-    </p>
+<!-- ================= FOCUS AREAS HERO ================= -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- LEFT: TEXT -->
+    <div>
+      <p class="text-sm uppercase tracking-wide text-muted mb-4">
+        Focus areas
+      </p>
+
+      <h1 class="font-serif text-4xl md:text-5xl leading-tight mb-6">
+        Thematic lenses for policy and development analysis
+      </h1>
+
+      <p class="text-lg text-muted mb-10 max-w-xl">
+        DevWatch International organises its work around key thematic areas
+        through which governance, development, and strategic change are examined
+        across Africa and other emerging economies.
+      </p>
+    </div>
+
+    <!-- RIGHT: HERO IMAGE -->
+    <div class="hidden md:block">
+      <img
+        src="assets/images/hero.jpg"
+        alt="DevWatch focus areas and thematic analysis"
+        class="w-full max-w-lg ml-auto"
+      />
+    </div>
+
   </div>
 </section>
 
@@ -70,7 +98,9 @@
     <div>
       <h2 class="font-serif text-2xl mb-4">Governance & Leadership</h2>
       <p class="text-muted mb-4">
-        DevWatch examines how power, institutions, and leadership practices shape governance outcomes. We focus on accountability, state capacity, elite incentives, and the everyday politics of reform in African governance systems.
+        DevWatch examines how power, institutions, and leadership practices shape
+        governance outcomes. We focus on accountability, state capacity, elite
+        incentives, and the everyday politics of reform in African governance systems.
       </p>
       <ul class="list-disc list-inside text-muted mb-6">
         <li>Public institutions and accountability</li>
@@ -89,7 +119,10 @@
     <div>
       <h2 class="font-serif text-2xl mb-4">Development Finance & Economy</h2>
       <p class="text-muted mb-4">
-        Development outcomes are shaped not only by resources, but by how financial systems are structured and governed. DevWatch analyses public finance, cooperative models, economic policy choices, and the political economy of growth and inequality.
+        Development outcomes are shaped not only by resources, but by how financial
+        systems are structured and governed. DevWatch analyses public finance,
+        cooperative models, economic policy choices, and the political economy of
+        growth and inequality.
       </p>
       <ul class="list-disc list-inside text-muted mb-6">
         <li>Public finance and fiscal reform</li>
@@ -108,7 +141,10 @@
     <div>
       <h2 class="font-serif text-2xl mb-4">Renewable Energy & Sustainability</h2>
       <p class="text-muted mb-4">
-        Energy transitions are not merely technical challenges; they are political, social, and economic processes. DevWatch explores renewable energy, sustainability, and climate policy with a focus on access, equity, and community-level impact.
+        Energy transitions are not merely technical challenges; they are political,
+        social, and economic processes. DevWatch explores renewable energy,
+        sustainability, and climate policy with a focus on access, equity, and
+        community-level impact.
       </p>
       <ul class="list-disc list-inside text-muted mb-6">
         <li>Renewable energy access</li>
@@ -127,7 +163,10 @@
     <div>
       <h2 class="font-serif text-2xl mb-4">Digital Policy & Innovation</h2>
       <p class="text-muted mb-4">
-        Digital technologies are reshaping governance, service delivery, and economic participation. DevWatch analyses digital policy, innovation ecosystems, and the implications of technology adoption for public institutions and development outcomes.
+        Digital technologies are reshaping governance, service delivery, and
+        economic participation. DevWatch analyses digital policy, innovation
+        ecosystems, and the implications of technology adoption for public
+        institutions and development outcomes.
       </p>
       <ul class="list-disc list-inside text-muted mb-6">
         <li>Digital governance and regulation</li>
@@ -146,7 +185,10 @@
     <div>
       <h2 class="font-serif text-2xl mb-4">Peace, Security & Cooperation</h2>
       <p class="text-muted mb-4">
-        Peace and security are foundational to development. DevWatch examines conflict dynamics, social cohesion, and cooperation mechanisms at local, national, and regional levels, with attention to non-state actors and community-based approaches.
+        Peace and security are foundational to development. DevWatch examines
+        conflict dynamics, social cohesion, and cooperation mechanisms at local,
+        national, and regional levels, with attention to non-state actors and
+        community-based approaches.
       </p>
       <ul class="list-disc list-inside text-muted mb-6">
         <li>Conflict drivers and resolution</li>
@@ -170,6 +212,8 @@
     © DevWatch International · Policy Analysis & Media Platform
   </div>
 </footer>
+
+<!-- Netlify Identity -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {

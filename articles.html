@@ -34,13 +34,17 @@
 
 <!-- ================= HEADER ================= -->
 <header class="border-b">
-  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <a href="index.html" class="flex items-center space-x-2">
-      <img src="assets/images/devwatch-logo.svg" alt="DevWatch International" class="h-8">
-      <span class="font-serif font-bold text-primary text-xl">DevWatch</span>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="index.html" class="flex items-center">
+      <img 
+        src="assets/images/devwatch-logo.png" 
+        alt="DevWatch International logo" 
+        class="h-9 w-auto"
+      />
     </a>
 
-    <nav class="space-x-6 text-sm font-medium">
+    <nav class="hidden md:flex space-x-7 text-sm font-medium">
       <a href="about.html" class="hover:text-primary">About</a>
       <a href="focus.html" class="hover:text-primary">Focus Areas</a>
       <a href="articles.html" class="text-primary">Articles</a>
@@ -49,21 +53,45 @@
       <a href="people.html" class="hover:text-primary">People</a>
       <a href="contact.html" class="hover:text-primary">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<!-- ================= PAGE INTRO ================= -->
-<section class="max-w-7xl mx-auto px-6 py-16">
-  <div class="max-w-3xl">
-    <h1 class="font-serif text-4xl mb-4">Articles & Commentary</h1>
-    <p class="text-muted text-lg">
-      Analysis, explainers, and commentary on governance, development, and strategic issues shaping Africa and emerging economies.
-    </p>
+<!-- ================= ARTICLES HERO ================= -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- LEFT: TEXT -->
+    <div>
+      <p class="text-sm uppercase tracking-wide text-muted mb-4">
+        Articles & commentary
+      </p>
+
+      <h1 class="font-serif text-4xl md:text-5xl leading-tight mb-6">
+        Independent analysis on governance and development
+      </h1>
+
+      <p class="text-lg text-muted mb-10 max-w-xl">
+        Original articles and expert commentary examining power, public policy,
+        development strategy, and institutional change across Africa and other
+        emerging economies.
+      </p>
+    </div>
+
+    <!-- RIGHT: HERO IMAGE -->
+    <div class="hidden md:block">
+      <img
+        src="assets/images/hero.jpg"
+        alt="DevWatch articles and policy analysis"
+        class="w-full max-w-lg ml-auto"
+      />
+    </div>
+
   </div>
 </section>
 
 <!-- ================= FILTER BAR (VISUAL ONLY) ================= -->
-<section class="max-w-7xl mx-auto px-6 mb-12">
+<section class="max-w-7xl mx-auto px-6 mb-16">
   <div class="flex flex-wrap gap-4 text-sm">
     <select class="border px-3 py-2 rounded">
       <option>All Focus Areas</option>
@@ -85,8 +113,8 @@
 </section>
 
 <!-- ================= ARTICLES LIST ================= -->
-<section class="max-w-7xl mx-auto px-6 pb-20">
-  <div id="articles-list" class="max-w-4xl space-y-12">
+<section class="max-w-7xl mx-auto px-6 pb-24">
+  <div id="articles-list" class="max-w-4xl space-y-14">
     <!-- Articles injected here -->
   </div>
 </section>
@@ -97,6 +125,8 @@
     © DevWatch International
   </div>
 </footer>
+
+<!-- Netlify Identity -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
@@ -109,6 +139,8 @@
     });
   }
 </script>
+
+<!-- Articles Renderer -->
 <script src="assets/js/articles.js"></script>
 
 </body>
